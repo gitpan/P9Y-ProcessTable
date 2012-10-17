@@ -1,6 +1,45 @@
 Revision History for P9Y-ProcessTable
 =====================================
 
+v0.91 2012-10-17
+----------------
+
+commit fc4b511f6b5cf1f1793a3e30cba96f4d83b19864
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Wed Oct 17 14:39:36 2012 -0400
+
+    Fix SYNOPSIS
+
+commit 9da026d73e597eb17ee30370d4a89797a05af3e3
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Wed Oct 17 14:15:55 2012 -0400
+
+    Minor POD/dist.ini changes
+
+commit 35d23f5e229647f1f870ed57c19715af823d292b
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Wed Oct 17 14:04:22 2012 -0400
+
+    README.pod / stuff
+
+commit 6e74234a025500fb435bef1a8df7ba9651b0b4ee
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Wed Oct 17 13:41:07 2012 -0400
+
+    Various fixes
+    
+    Fix P9YOSDeps.pm
+    Add PODs
+    Add fields method
+    Add suid/sgid
+    Normalize fields a bit better
+
+commit f6ea918d7409723371dcdf8a461051c8021d0483
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Tue Oct 16 10:41:52 2012 -0400
+
+    Add inc/ (ignored by mistake)
+
 ===================================
 End of changes in the last 365 days
 ===================================
