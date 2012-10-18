@@ -1,6 +1,6 @@
 package P9Y::ProcessTable;
 
-our $VERSION = '0.91'; # VERSION
+our $VERSION = '0.92'; # VERSION
 # ABSTRACT: Portably access the process table
 
 use sanity;
@@ -57,7 +57,7 @@ sub process {
    my ($self, $pid) = @_;
    $pid = $$ if (@_ == 1);
    my $hash = $self->_process_hash($pid);
-   return unless $hash;
+   return unless $hash && $hash->{pid} && $hash->{ppid};
    
    $hash->{_pt_obj} = $self;
    return P9Y::ProcessTable::Process->new($hash);
@@ -108,7 +108,6 @@ P9Y::ProcessTable - Portably access the process table
     }
  
     # Dump all the information in the current process table
-    no strict 'refs';
     foreach my $p ( P9Y::ProcessTable->table ) {
        print "--------------------------------\n";
        foreach my $f (P9Y::ProcessTable->fields) {

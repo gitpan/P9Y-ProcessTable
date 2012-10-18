@@ -22,32 +22,36 @@
       ]
    },
    "prereqs" : {
-      "configure" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : "6.30"
-         }
-      },
       "develop" : {
          "requires" : {
             "Test::Pod" : "1.41",
             "version" : "0.9901"
          }
       },
+      "runtime" : {
+         "requires" : {
+            "Moo" : "0.009001",
+            "Path::Class" : "0.17",
+            "namespace::clean" : "0.06",
+            "perl" : "v5.10.1",
+            "sanity" : "0.91"
+         }
+      },
       "test" : {
          "requires" : {
             "Test::CheckDeps" : "0.002",
-            "Test::More" : "0.88"
+            "Test::Most" : "0.01"
          }
       }
    },
    "provides" : {
       "P9Y::ProcessTable" : {
          "file" : "lib/P9Y/ProcessTable.pm",
-         "version" : "0.91"
+         "version" : "0.92"
       },
       "P9Y::ProcessTable::Process" : {
          "file" : "lib/P9Y/ProcessTable/Process.pm",
-         "version" : "0.91"
+         "version" : "0.92"
       }
    },
    "release_status" : "stable",
@@ -63,12 +67,17 @@
       },
       "x_irc" : "irc://irc.perl.org/#win32"
    },
-   "version" : "0.91",
+   "version" : "0.92",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.016000"
       },
       "plugins" : [
+         {
+            "class" : "inc::P9YOSDeps",
+            "name" : "P9YOSDeps",
+            "version" : null
+         },
          {
             "class" : "Dist::Zilla::Plugin::ReportPhase",
             "name" : "@Filter/ReportPhase",
@@ -88,11 +97,6 @@
             "class" : "Dist::Zilla::Plugin::OurPkgVersion",
             "name" : "@Filter/OurPkgVersion",
             "version" : "0.004000"
-         },
-         {
-            "class" : "Dist::Zilla::Plugin::PodWeaver",
-            "name" : "@Filter/PodWeaver",
-            "version" : "3.101641"
          },
          {
             "class" : "Dist::Zilla::Plugin::PruneCruft",
@@ -300,14 +304,39 @@
             "version" : "0.07"
          },
          {
-            "class" : "inc::P9YOSDeps",
-            "name" : "P9YOSDeps",
-            "version" : null
-         },
-         {
             "class" : "Dist::Zilla::Plugin::MetaResourcesFromGit",
             "name" : "MetaResourcesFromGit",
             "version" : "1.103620"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FileFinder::ByName",
+            "name" : "NoOSMods",
+            "version" : "4.300027"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PodWeaver",
+            "name" : "PodWeaver",
+            "version" : "3.101641"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::AutoPrereqs",
+            "name" : "@Prereqs/AutoPrereqs",
+            "version" : "4.300027"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MinimumPerl",
+            "name" : "@Prereqs/MinimumPerl",
+            "version" : "1.003"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MinimumPrereqs",
+            "name" : "@Prereqs/MinimumPrereqs",
+            "version" : "0.91"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PrereqsClean",
+            "name" : "@Prereqs/PrereqsClean",
+            "version" : "0.91"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",

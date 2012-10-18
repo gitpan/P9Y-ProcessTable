@@ -1,8 +1,46 @@
 Revision History for P9Y-ProcessTable
 =====================================
 
+v0.92 2012-10-17
+----------------
+
+commit 9105e1bf0329867d7cfc0c89ac3f5bd2cb4ada71
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Wed Oct 17 20:20:28 2012 -0400
+
+    Some final test fixes
+
+commit c6c508319355b6be53c65e76663543cb96845711
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Wed Oct 17 18:15:30 2012 -0400
+
+    Fix Prereqs
+    Reject $hash if it doesn't have a pid/ppid
+
+commit 2d39a99dabc4b6b36bc4997c0080f2356cf806f6
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Wed Oct 17 17:40:39 2012 -0400
+
+    Small fixes
+    
+    Remove 'no strict' from SYNOPSIS
+    Fix dist.ini ordering issue with MakeMaker/P9YOSDeps
+    Make sure OS modules produce no PODs
+
+commit 98a22f7a3ae0354c246984bcd4020d0a31581c3f
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Wed Oct 17 15:38:27 2012 -0400
+
+    Fix missing main::dir error in P9YOSDeps.pm
+
 v0.91 2012-10-17
 ----------------
+
+commit dc15d06bf82c0afb4afdfff3a4d3b9b9c66a7d44
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Wed Oct 17 14:41:51 2012 -0400
+
+    Release v0.91
 
 commit fc4b511f6b5cf1f1793a3e30cba96f4d83b19864
 Author: Brendan Byrd <Perl@ResonatorSoft.org>

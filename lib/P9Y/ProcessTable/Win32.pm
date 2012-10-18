@@ -1,7 +1,7 @@
 package  # hide from PAUSE
    P9Y::ProcessTable;
 
-our $VERSION = '0.91'; # VERSION
+our $VERSION = '0.92'; # VERSION
 
 #############################################################################
 # Modules
@@ -41,7 +41,7 @@ sub process {
    my ($self, $pid) = @_;
    $pid = Win32::Process::GetCurrentProcessID if (@_ == 1);  # process() changed here...
    my $hash = $self->_process_hash($pid);
-   return unless $hash;
+   return unless $hash && $hash->{pid} && $hash->{ppid};
    
    $hash->{_pt_obj} = $self;
    return P9Y::ProcessTable::Process->new($hash);
@@ -156,35 +156,3 @@ sub priority {
 }
 
 42;
-
-__END__
-=pod
-
-=encoding utf-8
-
-=head1 NAME
-
-P9Y::ProcessTable
-
-=head1 AVAILABILITY
-
-The project homepage is L<https://github.com/SineSwiper/P9Y-ProcessTable/wiki>.
-
-The latest version of this module is available from the Comprehensive Perl
-Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
-site near you, or see L<https://metacpan.org/module/P9Y::ProcessTable/>.
-
-=head1 AUTHOR
-
-Brendan Byrd <BBYRD@CPAN.org>
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is Copyright (c) 2012 by Brendan Byrd.
-
-This is free software, licensed under:
-
-  The Artistic License 2.0 (GPL Compatible)
-
-=cut
-
