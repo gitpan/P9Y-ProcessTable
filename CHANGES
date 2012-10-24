@@ -1,8 +1,25 @@
 Revision History for P9Y-ProcessTable
 =====================================
 
+v0.93 2012-10-24
+----------------
+
+commit 8c9c354c2f596a67926d7e80ef04304ae761674d
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Wed Oct 24 16:01:02 2012 -0400
+
+    Fix Solaris in ProcFS
+    Fix BSD v5.12 %$hash issue
+    Make ppid a non-dependency
+
 v0.92 2012-10-17
 ----------------
+
+commit 14ea842b35f9b9e306f87dce9b98479f0965d3a8
+Author: Brendan Byrd <Perl@ResonatorSoft.org>
+Date:   Wed Oct 17 20:25:35 2012 -0400
+
+    Release v0.92
 
 commit 9105e1bf0329867d7cfc0c89ac3f5bd2cb4ada71
 Author: Brendan Byrd <Perl@ResonatorSoft.org>

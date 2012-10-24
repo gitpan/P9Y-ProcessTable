@@ -1,6 +1,6 @@
 package P9Y::ProcessTable;
 
-our $VERSION = '0.92'; # VERSION
+our $VERSION = '0.93'; # VERSION
 # ABSTRACT: Portably access the process table
 
 use sanity;
@@ -303,7 +303,7 @@ those networks/channels and get help:
 
 irc.perl.org
 
-You can connect to the server at 'irc.perl.org' and join this channel: #distzilla then talk to this person for help: SineSwiper.
+You can connect to the server at 'irc.perl.org' and join this channel: #win32 then talk to this person for help: SineSwiper.
 
 =back
 

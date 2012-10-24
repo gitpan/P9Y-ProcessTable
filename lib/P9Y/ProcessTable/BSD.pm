@@ -1,7 +1,7 @@
 package  # hide from PAUSE
    P9Y::ProcessTable;
 
-our $VERSION = '0.92'; # VERSION
+our $VERSION = '0.93'; # VERSION
 
 #############################################################################
 # Modules
@@ -81,7 +81,7 @@ sub _process_hash {
    };
 
    my @state;
-   foreach my $key (keys $states) {
+   foreach my $key (keys %$states) {
       push @state, $states->{$key} if $info->{$key};
    }
    $hash->{state} = join ' ', @state;

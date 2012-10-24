@@ -47,11 +47,11 @@
    "provides" : {
       "P9Y::ProcessTable" : {
          "file" : "lib/P9Y/ProcessTable.pm",
-         "version" : "0.92"
+         "version" : "0.93"
       },
       "P9Y::ProcessTable::Process" : {
          "file" : "lib/P9Y/ProcessTable/Process.pm",
-         "version" : "0.92"
+         "version" : "0.93"
       }
    },
    "release_status" : "stable",
@@ -67,7 +67,7 @@
       },
       "x_irc" : "irc://irc.perl.org/#win32"
    },
-   "version" : "0.92",
+   "version" : "0.93",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.016000"
@@ -234,6 +234,11 @@
             "version" : "1.14000001"
          },
          {
+            "class" : "Dist::Zilla::Plugin::MetaResourcesFromGit",
+            "name" : "@Filter/MetaResourcesFromGit",
+            "version" : "1.103620"
+         },
+         {
             "class" : "Dist::Zilla::Plugin::CopyFilesFromBuild",
             "name" : "@Filter/CopyFilesFromBuild",
             "version" : "0.103510"
@@ -304,11 +309,6 @@
             "version" : "0.07"
          },
          {
-            "class" : "Dist::Zilla::Plugin::MetaResourcesFromGit",
-            "name" : "MetaResourcesFromGit",
-            "version" : "1.103620"
-         },
-         {
             "class" : "Dist::Zilla::Plugin::FileFinder::ByName",
             "name" : "NoOSMods",
             "version" : "4.300027"
@@ -331,12 +331,12 @@
          {
             "class" : "Dist::Zilla::Plugin::MinimumPrereqs",
             "name" : "@Prereqs/MinimumPrereqs",
-            "version" : "0.91"
+            "version" : "0.92"
          },
          {
             "class" : "Dist::Zilla::Plugin::PrereqsClean",
             "name" : "@Prereqs/PrereqsClean",
-            "version" : "0.91"
+            "version" : "0.92"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
