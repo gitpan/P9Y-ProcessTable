@@ -31,9 +31,9 @@
       "runtime" : {
          "requires" : {
             "Moo" : "0.009001",
-            "Path::Class" : "0.17",
-            "namespace::clean" : "0.06",
-            "perl" : "5.008009"
+            "Path::Class" : "0.16",
+            "namespace::clean" : "0.01",
+            "perl" : "v5.8.8"
          }
       },
       "test" : {
@@ -47,11 +47,11 @@
    "provides" : {
       "P9Y::ProcessTable" : {
          "file" : "lib/P9Y/ProcessTable.pm",
-         "version" : "0.95_001"
+         "version" : "0.95_002"
       },
       "P9Y::ProcessTable::Process" : {
          "file" : "lib/P9Y/ProcessTable/Process.pm",
-         "version" : "0.95_001"
+         "version" : "0.95_002"
       }
    },
    "release_status" : "testing",
@@ -67,7 +67,7 @@
       },
       "x_irc" : "irc://irc.perl.org/#win32"
    },
-   "version" : "0.95_001",
+   "version" : "0.95_002",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.016000"

@@ -1,13 +1,12 @@
 package P9Y::ProcessTable::Process;
 
-our $VERSION = '0.95_001'; # VERSION
+our $VERSION = '0.95_002'; # VERSION
 # ABSTRACT: Base class for a single process
 
 #############################################################################
 # Modules
 
 # use sanity;
-use utf8;
 use strict qw(subs vars);
 no strict 'refs';
 use warnings FATAL => 'all';
