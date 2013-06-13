@@ -1,7 +1,7 @@
 package  # hide from PAUSE
    P9Y::ProcessTable;
 
-our $VERSION = '1.00'; # VERSION
+our $VERSION = '1.00_01'; # VERSION
 
 #############################################################################
 # Modules
@@ -26,8 +26,6 @@ my $IS_CYGWIN = ($^O =~ /cygwin/i) ? 1 : 0;
 
 #############################################################################
 # Methods
-
-no warnings 'redefine';
 
 sub list {
    my ($self) = @_;
