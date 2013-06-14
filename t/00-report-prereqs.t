@@ -19,6 +19,7 @@ my @modules = qw(
   Test::CheckDeps
   Test::More
   Test::Most
+  namespace::clean
   perl
 );
 
