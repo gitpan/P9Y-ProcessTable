@@ -11,13 +11,14 @@ use List::Util qw/max/;
 
 my @modules = qw(
   ExtUtils::MakeMaker
+  List::AllUtils
   List::Util
+  Module::Runtime
   Moo
   Path::Class
   Test::CheckDeps
   Test::More
   Test::Most
-  namespace::clean
   perl
 );
 

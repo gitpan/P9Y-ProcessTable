@@ -1,7 +1,7 @@
 package  # hide from PAUSE
-   P9Y::ProcessTable::Base;
+   P9Y::ProcessTable::Table::Base;
 
-our $VERSION = '1.00_01'; # VERSION
+our $VERSION = '1.00_02'; # VERSION
 
 #############################################################################
 # Modules
@@ -12,7 +12,7 @@ no strict 'refs';
 use warnings FATAL => 'all';
 no warnings qw(uninitialized);
 
-use P9Y::ProcessTable::Process;
+use Moo;
 
 use namespace::clean;
 no warnings 'uninitialized';
